@@ -8,21 +8,26 @@
 }
 
 .storybook-button--primary {
-    color: black;
-    background: linear-gradient(-45deg, #ffeb3b, #d8c72c, #ffffff);
-    background-size: 400% 400%;
+    color: white;
+    background: linear-gradient(-90deg, #ffeb3b, #d8c72c, #ffffff);
+    background-size: 100%;
     animation: gradient-bg 1s ease infinite;
+    background-image: url("./Noise.svg");
 }
 
 @keyframes gradient-bg {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 33%;
 	}
-	50% {
-		background-position: 100% 50%;
+	33% {
+		background-position: 50% 33%;
 	}
+
+    66% {
+        background-position: 0% 66%;
+    }
 	100% {
-		background-position: 0% 50%;
+		background-position: 66% 100%;
 	}
 }
 
