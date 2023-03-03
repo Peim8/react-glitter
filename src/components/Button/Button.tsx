@@ -1,7 +1,7 @@
 
 import React from "react";
 import classNames from "classnames";
-import "./button.css";
+import "./Button.css";
 
 export interface ButtonProps {
     type?: "primary" | "secondary";
@@ -29,7 +29,7 @@ const Button = ({
             style={textColor ? { color: textColor } : {}}
             onClick={onClick}
         >
-            {label}zz
+            {label}
         </button>
     );
 };
