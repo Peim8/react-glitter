@@ -18,12 +18,12 @@
 .storybook-div::before {
     content: "";
     background-size: cover;
-    animation: gradient-bg 0.2s infinite;
+    animation: gradient-bg 0.1s infinite;
     animation-direction: alternate;
     background-image: url("../../../stories/assets/stars.png");
     background-size: 200% 200%;
     position: absolute;
-    opacity:0.2; 
+    opacity:0.1; 
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
