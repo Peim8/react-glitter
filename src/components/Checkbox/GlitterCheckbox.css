@@ -1,0 +1,30 @@
+.glittercheckbox {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 20px;
+  height: 20px;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.glittercheckbox::before {
+  content: "";
+  background-size: cover;
+  animation: gradient-bg 0.5s infinite;
+  animation-direction: alternate;
+  background-image: url("../../../stories/assets/stars.png");
+  background-size: 10% 10%;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
