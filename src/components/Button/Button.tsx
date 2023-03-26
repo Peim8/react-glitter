@@ -8,8 +8,8 @@ export interface ButtonProps {
   type?: "primary" | "secondary";
   textColor?: string;
   color?: string;
+  label?: string;
   size?: "small" | "medium" | "large";
-  label: string;
   opacity: number;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
@@ -56,7 +56,7 @@ const StyledButton = styled.button`
     animation-direction: normal;
     background-image: url(${img});
     position: absolute;
-    opacity: 0.4;
+    opacity: ${(props: ButtonProps) => props.opacity };
     top: 0;
     bottom: 0;
     left: 0;
@@ -75,7 +75,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <StyledButton
-      type="button"
+      opacity={opacity}
       className={classNames(
         "storybook-button",
         `storybook-button--${size}`,
