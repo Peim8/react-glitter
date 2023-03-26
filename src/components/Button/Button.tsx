@@ -35,8 +35,8 @@ const bg = keyframes`
 
 const StyledButton = styled.button`
   & {
-    color: black;
-    background: pink;
+    color: ${(props: ButtonProps) => props.textColor };
+    background: ${(props: ButtonProps) => props.color };
     position: relative;
     top: 0;
     bottom: 0;
@@ -76,6 +76,8 @@ const Button = ({
   return (
     <StyledButton
       opacity={opacity}
+      color={color}
+      textColor={textColor}
       className={classNames(
         "storybook-button",
         `storybook-button--${size}`,
