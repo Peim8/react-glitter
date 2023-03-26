@@ -25,6 +25,9 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "classnames": "^2.3.2"
   },
   "scripts": {
