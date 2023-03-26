@@ -1,74 +1,89 @@
 .storybook-button {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
 }
 
 .storybook-button--primary {
-    color: black;
-    background: pink;
-    position: relative;
-    top: 0; bottom: 0; left: 0; right: 0;
+  color: black;
+  background: pink;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .storybook-button--primary::before {
-    content: "";
-    background-size: cover;
-    animation: gradient-bg 0.2s infinite;
-    animation-direction: alternate;
-    background-image: url("../../../stories/assets/stars.png");
-    position: absolute;
-    opacity:0.3;
-    top: 0; bottom: 0; left: 0; right: 0;
+  content: "";
+  background-size: 200% 500%;
+  animation: gradient-bg 0.2s infinite;
+  animation-direction: normal;
+  background-image: url("../../../stories/assets/stars.png");
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @keyframes gradient-bg {
-	0% {
-		background-position: 0% 33%;
-	}
-	33% {
-		background-position: 50% 33%;
-	}
+  0% {
+    background-position: 0% 33%;
+  }
+  33% {
+    background-position: 50% 33%;
+  }
 
-    66% {
-        background-position: 0% 66%;
-    }
-	100% {
-		background-position: 66% 100%;
-	}
+  66% {
+    background-position: 66% 66%;
+  }
+  88% {
+    background-position: 44% 88%;
+  }
+  100% {
+    background-position: 66% 100%;
+  }
 }
 
 .storybook-button--secondary {
-    color: #333;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-    background-image: url("../../../stories/assets/Noise.svg");
-    border: solid 6px;
-    border-image: url("../../../stories/assets/Noise.svg") 20% round;
-    animation: gradient-border 1s infinite;
-    background-size: 500% 500%;
-    transition: border-width 0.6s linear;
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  background-image: url("../../../stories/assets/Noise.svg");
+  border: solid 6px;
+  border-image: url("../../../stories/assets/Noise.svg") 20% round;
+  animation: gradient-border 1s infinite;
+  background-size: 500% 500%;
+  transition: border-width 0.6s linear;
 }
 
 @keyframes gradient-border {
-    20% { border-image-slice: 20%}
-    40% { border-image-slice: 30%}
-    60% { border-image-slice: 40%}
+  20% {
+    border-image-slice: 20%;
   }
+  40% {
+    border-image-slice: 30%;
+  }
+  60% {
+    border-image-slice: 40%;
+  }
+}
 
 .storybook-button--small {
-    font-size: 12px;
-    padding: 10px 16px;
+  font-size: 12px;
+  padding: 10px 16px;
 }
 
 .storybook-button--medium {
-    font-size: 14px;
-    padding: 11px 20px;
+  font-size: 14px;
+  padding: 11px 20px;
 }
 
 .storybook-button--large {
-    font-size: 16px;
-    padding: 12px 24px;
+  font-size: 16px;
+  padding: 12px 24px;
 }
